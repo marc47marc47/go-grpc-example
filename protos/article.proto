@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package protos;
+
+import "google/api/annotations.proto";
+
+service Article {
+    rpc GetArticleInfo (AQueryRequest) returns (ArticleInfo) {
+        option (google.api.http).get = "/v1/article/info/{article_id}";
+    }
+    rpc GetArticleList (AQueryRequest) returns (ArticleList) {
+        option (google.api.http).get = "/v1/article/list";
+    }
+}
+
+message AQueryRequest {
+    int64 article_id = 1;
+    int64 limit = 2;
+    int64 page = 3;
+}
+
+message ArticleInfo {
+    int64 article_id = 1;
+    string title = 2;
+    string slug = 3;
+    string summary = 4;
+    string body = 5;
+    string image = 6;
+    int64 views = 7;
+    int64 user_id = 8;
+    string created_at = 9;
+    string updated_at = 10;
+}
+
+message ArticleList {
+    repeated ArticleInfo data = 1;
+}
