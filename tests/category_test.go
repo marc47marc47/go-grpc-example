@@ -6,7 +6,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	pb "github.com/markbest/go-grpc-example/protos"
+	pb "github.com/marc47marc47/go-grpc-example/protos"
 )
 
 func Test_GetCategoryInfo(t *testing.T) {

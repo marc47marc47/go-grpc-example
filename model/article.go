@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"github.com/markbest/go-grpc-example/utils"
+	"github.com/marc47marc47/go-grpc-example/utils"
 )
 
 type Article struct {

@@ -5,8 +5,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	. "github.com/markbest/go-grpc-example/model"
-	pb "github.com/markbest/go-grpc-example/protos"
+	. "github.com/marc47marc47/go-grpc-example/model"
+	pb "github.com/marc47marc47/go-grpc-example/protos"
 )
 
 type CategoryServer struct{}

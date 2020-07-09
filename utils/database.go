@@ -7,7 +7,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
-	. "github.com/markbest/go-grpc-example/conf"
+	. "github.com/marc47marc47/go-grpc-example/conf"
 )
 
 var db *gorm.DB

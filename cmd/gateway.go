@@ -8,8 +8,8 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	. "github.com/markbest/go-grpc-example/conf"
-	pb "github.com/markbest/go-grpc-example/protos"
+	. "github.com/marc47marc47/go-grpc-example/conf"
+	pb "github.com/marc47marc47/go-grpc-example/protos"
 )
 
 func run(grpcEndpoint, httpEndpoint string) error {
